@@ -286,6 +286,10 @@ h5 {
   .container {
     flex-direction: column;
   }
+  .menu-lateral {
+    position: static;
+    width: 88%;
+  }
 
   .fakeimg {
     width: 86%;
@@ -326,12 +330,7 @@ h5 {
   .row {
     flex-direction: column; /* Cambiar la dirección a columna */
   }
-  .menu-lateral {
-    position: static; /* Quitar posicionamiento fijo */
-    width: 100%; /* Ancho completo */
-    height: auto; /* Altura automática */
-    padding: 10px;
-  }
+
   .side,
   .main {
     flex: 1; /* Hacer que ambos tomen todo el ancho disponible */
