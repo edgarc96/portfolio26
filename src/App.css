@@ -2,7 +2,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-
+  overflow-x: hidden;
   font-family: Arial, sans-serif;
   background-color: #0f0e0e;
 }
@@ -282,12 +282,23 @@ h5 {
 /* Media Queries para Responsividad */
 
 /* Estilos para Tablets */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .fakeimg {
+    width: 86%;
+    font-family: monospace;
+    text-shadow: 0 0 3px #000, 0 0 5px #1c1c1d;
+  }
+
   .contenido {
-    margin-left: 20px;
+    margin-left: 0px;
   }
   .menu-lateral {
-    width: 200px;
+    position: static;
+    width: 88%;
   }
   .modal {
     max-width: 80%;
