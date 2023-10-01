@@ -276,3 +276,52 @@ h5 {
   background: #202020;
   color: #51f851;
 }
+
+/* ... Tus estilos actuales ... */
+
+/* Media Queries para Responsividad */
+
+/* Estilos para Tablets */
+@media (max-width: 768px) {
+  .contenido {
+    margin-left: 20px;
+  }
+  .menu-lateral {
+    width: 200px;
+  }
+  .modal {
+    max-width: 80%;
+  }
+}
+
+/* Estilos para Dispositivos Móviles */
+@media (max-width: 480px) {
+  .header {
+    padding: 40px 20px; /* Reducir padding */
+    height: auto; /* Cambiar la altura a automático */
+  }
+  .contenido {
+    margin-left: 0; /* Quitar margen izquierdo */
+    padding: 10px;
+  }
+  .row {
+    flex-direction: column; /* Cambiar la dirección a columna */
+  }
+  .menu-lateral {
+    position: static; /* Quitar posicionamiento fijo */
+    width: 100%; /* Ancho completo */
+    height: auto; /* Altura automática */
+    padding: 10px;
+  }
+  .side,
+  .main {
+    flex: 1; /* Hacer que ambos tomen todo el ancho disponible */
+    padding: 10px;
+  }
+  .modal {
+    max-width: 95%;
+  }
+  .terminal {
+    width: 100%;
+  }
+}
