@@ -294,12 +294,20 @@ h5 {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .footer {
+    font-size: 10px;
+    width: 85%;
+  }
+}
+
 /* Estilos para Dispositivos Móviles */
 @media (max-width: 480px) {
   .header {
     padding: 40px 20px; /* Reducir padding */
     height: auto; /* Cambiar la altura a automático */
   }
+
   .contenido {
     margin-left: 0; /* Quitar margen izquierdo */
     padding: 10px;
