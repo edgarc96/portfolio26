@@ -1,0 +1,278 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, sans-serif;
+  background-color: #0f0e0e;
+}
+
+.main {
+  flex: 50% 1;
+  background-color: #151414;
+  padding: 20px;
+  color: #fff;
+}
+
+.fakeimg {
+  max-height: 768px;
+  width: 86%;
+  font-family: monospace;
+  text-shadow: 0 0 3px #000, 0 0 5px #1c1c1d;
+  background-color: #0b0b0b;
+  width: 94.5%;
+  padding: 20px;
+}
+
+.header {
+  padding: 80px;
+  display: block;
+  text-align: center;
+  background: #101010;
+  color: #fff;
+  background-size: cover;
+  background-position: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.79), #1a1a1a),
+    url(https://i.gifer.com/origin/84/84d79f587caeee69caf306386ec3527d_w200.gif);
+  background-attachment: fixed;
+  height: 14.2vh;
+}
+.contenido {
+  display: block;
+  margin-left: 300px;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.main,
+.side {
+  padding: 20px;
+  color: #fff;
+}
+
+.side {
+  padding: 47px;
+
+  color: #fff;
+  flex: 30% 1;
+  background-color: #1e1e1e;
+}
+
+.menu-lateral {
+  background-color: #1b1b1b;
+  color: #fff;
+  width: 250px;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.button1 {
+  background-color: #000;
+  border: 1px solid #fff; /* white border */
+  color: #fff; /* white text */
+  padding: 5px 10px;
+  cursor: pointer; /* mouse cursor changes to a hand when hovering */
+  text-align: center;
+  border-radius: 3px;
+  transition: 0.3s ease; /* smooth transition for hover effects */
+}
+
+.openModalButton {
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+  border: none; /* Quitar borde */
+  padding: 10px 20px; /* Padding alrededor del texto */
+  cursor: pointer; /* Cambiar el cursor a mano al pasar por encima */
+  font-size: 16px; /* Tamaño de letra */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: 0.3s; /* Efecto de transición al hacer hover */
+}
+
+/* Efecto al pasar el mouse por encima */
+.openModalButton:hover {
+  background-color: #333; /* Cambiar color de fondo al hacer hover */
+}
+.button1:hover {
+  background-color: #333; /* slightly lighter black for hover effect */
+}
+
+:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.menu-lateral {
+  background-color: #1b1b1b;
+  color: #fff;
+  width: 250px;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.imgs {
+  width: 100%;
+}
+
+.close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  /* ... other styles ... */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #252424;
+  padding: 20px;
+  z-index: 2000;
+  max-width: 90%; /* add a max width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* some shadow for better visibility */
+  opacity: 0; /* Start with a fully transparent modal */
+  transition: opacity 0.3s ease-in-out;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+h5 {
+  display: block;
+  font-size: 0.83em;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.terminal-body {
+  height: 240px;
+  overflow-y: auto;
+  color: #0f0;
+}
+
+.terminal {
+  width: 98%;
+  height: 267px;
+  background-color: #0f0f0f;
+  padding: 10px;
+  font-family: monospace;
+  color: #0f0;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 240px;
+  overflow-y: auto;
+  background-color: #00ff00; /* Verde fosforescente */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: #73ff48;
+}
+.terminal-header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.terminal-header-button-close {
+  background-color: #ff3b47;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.terminal-header-button-minimize {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+
+  background-color: #ffbf00;
+}
+
+.terminal-header-button-expand {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+
+  background-color: #0f0;
+}
+
+.projects {
+  background-color: #000;
+  margin-top: 5vh;
+  height: 10vh;
+}
+
+.projects_1 {
+  color: #0f0;
+  margin-left: 10px;
+}
+
+.footer {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  background: #202020;
+  color: #51f851;
+}
